@@ -1,0 +1,16 @@
+.nav-item-on {background: transparent; -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";}
+
+.navbar-brand {background-image: url(../assets/images/logo.png) !important;}
+video#bgvid {display: none !important;}
+div#bgvid-fallback {-ms-behavior: url(/css/ie8-bgsize.min.htc);}
+.jumbotron {height: 750px !important; -ms-behavior: url(/css/ie8-bgsize.min.htc);}
+	.jumbotron h1 {margin: 250px 0 0 0;}
+
+.download-ios {background-image: url(../assets/images/download-ios.png) !important;}
+.download-android {background-image: url(../assets/images/download-android.png) !important;}
+
+#section-compare {background-image: url(../assets/images/bg-compare.jpeg); background-size: cover; -ms-behavior: url(/css/ie8-bgsize.min.htc);}
+	.compare-content .check {background: url(../assets/images/compare-check.png) no-repeat center center !important;}
+  	.compare-content .minus {background: url(../assets/images/compare-minus.png) no-repeat center center !important;}
+
+#footer .social-media a {background-image: url(../assets/images/social-media-sprite.png) !important;}

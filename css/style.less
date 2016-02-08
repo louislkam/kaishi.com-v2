@@ -1,0 +1,43 @@
+/* @import */
+@import "bootstrap.min.less";   	// Bootstrap
+@import "mixins/clearfix";    		// Clearfix
+@import "main.less";          		// MAIN
+@import "images";             		// Images
+@import "breakpoints";        		// Breakpoints
+
+/* Parametric Classes */
+.container-top-static() {display: block; width: 100%;}
+.container-mid-static() {display: block; position: relative;}
+.container-float-left() {display: block; float: left;}
+.container-float-right() {display: block; float: right;}
+
+.border-radius-0() {-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px;}
+.border-radius-3() {-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+.border-radius-5() {-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.border-radius-10() {-webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+.border-radius-15() {-webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px;}
+.border-radius-500() {-webkit-border-radius: 500px; -moz-border-radius: 500px; border-radius: 500px;}
+
+.border-box() {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.border-box-default() {-webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box;}
+
+.transition-03() {-webkit-transition: box-shadow 0.3s, border 0.3s; -moz-transition: box-shadow 0.3s, border 0.3s; -o-transition: box-shadow 0.3s, border 0.3s; transition: box-shadow 0.3s, border 0.3s;}
+
+/* Theme Colors */
+@base-grey-dark: #333;
+@base-grey-light: lighten(@base-grey-dark, 77%);
+@theme-orange: #ef426f;
+@theme-orange-light: lighten(@theme-orange, 10%);
+@product-description: #ef426f;
+@white: #fff;
+@error-red: #b51c23;
+
+/* Typography */
+@default-font: Helvetica, Arial, "Hiragino Sans GB", "微软雅黑", "黑体", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+
+/* Style Begin */
+html {position: relative; min-height: 100%;}
+body {font-family: @default-font;}
+h2 {font-weight: 100;}
+a, a:visited {color: @theme-orange;}
+a:hover {color: lighten(@theme-orange, 20%);}

@@ -1,0 +1,244 @@
+#all {.container-top-static; font-family: @default-font;}
+
+#navigation {position: fixed; width: 100%; display: block; background: transparent; border-color: transparent;}
+  .navigation-bg {position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #333; z-index: -10;}
+  .navbar-brand {.border-box-default(); display: block; width: 50px; height: 50px; padding: 15px; background-image: url(../assets/images/logo@3x.png); background-repeat: no-repeat; background-position: center center; background-size: 50px 50px; overflow: hidden; text-indent: -9999px;}
+  .navbar-default .navbar-nav {.border-box-default(); display: block; padding: 15px 0;}
+    .navbar-default .navbar-nav > li > a {color: #fff; font-size: 1.3em; font-weight: 100;}
+    .navbar-default .navbar-nav > li > a:hover {color: @theme-orange;}
+    .navbar-default .navbar-nav > li > a.nav-buy {.border-radius-10; background: @theme-orange; margin-left: 15px; margin-right: 15px;}
+    .navbar-default .navbar-nav > li > a:hover.nav-buy {background: @theme-orange-light; color: #fff;}
+
+    .navbar-default .navbar-toggle {height: 40px; width: 45px; margin: 20px 15px; border-color: #fff;}
+    .navbar-default .navbar-toggle .icon-bar {background-color: #fff;}
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {background-color: @theme-orange; border-color: @theme-orange;}
+
+#navigation-block {position: relative; width: 100%; display: block; background: #333; border-color: transparent;}
+
+.jumbotron {position: relative; display: block; margin: 0 auto; padding: 150px 0 150px 0; background: transparent; overflow: hidden;}
+.jumbotron h1 {margin: 0.4em 0; color: @theme-orange;}
+.jumbotron p {color: #666;}
+
+.jumbotron .hero-image img {max-width: 100%;}
+
+.app-download-badges {}
+.download-ios, .download-android {display: inline-block; margin: 0 10px 15px 0; width: 172px; height: 50px; background-size: 172px 50px; text-indent: -9000px;}
+
+video#bgvid {position: absolute; display: none; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; overflow: hidden; z-index: -10; -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); background: url(../assets/images/ie8/video-bg.jpg) no-repeat; background-size: cover;}
+div#bgvid-fallback {position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -20;}
+#section-appfeatures {padding: 80px 0 0 0;}
+  .app-phone {position: relative;}
+    .app-phone-image {position: relative; max-width: 100%; z-index: 1;}
+    .app-phone-overlay {.border-radius-3(); position: absolute; display: block; top: 9.5%; left: 0; right: 0; margin: 0 auto; width: 63.66%; height: 69.7%; border: 1px solid #ccc; background: #fff; overflow: hidden; z-index: 100;}
+      .app-phone-overlay div {width: 100%; height: 100%;}
+      .app-phone-overlay img {width: 100%; height: 100%;}
+    .app-slideshow-pager {width: 100%;}
+      .app-slideshow-pager span {display: block;}
+      .app-slideshow-pager span:last-child {margin-right: -30px;}
+      .app-slideshow-pager span > a {position: relative; display: block; margin-right: 5px; margin-left: 5px; overflow: hidden;}
+      .app-slideshow-pager span > a > img {position: absolute; left: 0; top: 0; max-width: 100%; max-height: 200%; cursor: pointer;}
+      .app-slideshow-pager span.cycle-slide-active > a > img {top: -100%;}
+      .app-slideshow-pager span > a > div.nav-item-on-container {position: absolute; top: 0; left: 0; right: 0; bottom: 0; cursor: pointer; opacity: 0;}
+      .app-slideshow-pager span > a > div.nav-item-on-container > img {max-width: 100%;}
+  .app-navigation {}
+    .app-slideshow-description {display: block;}
+      .app-slideshow-description div {width: 100%; text-align: center;}
+      .app-slideshow-description h2 {margin: 50px auto 0 auto; width: 75%; color: @theme-orange;}
+      .app-slideshow-description p {margin: 30px auto 0 auto; width: 75%; font-size: 1.2em; color: #888;}
+      .cycle-next {position: absolute; top: 45%; right: 0; display: block; margin: 0 15px 0 0; width: 8%; z-index: 100;}
+      .cycle-prev {position: absolute; top: 45%; left: 0; display: block; margin: 0 0 0 15px; width: 8%; z-index: 100;}
+        .cycle-next img, .cycle-prev img {max-width: 100%;}
+
+#section-story {padding: 40px 0;}
+  #section-story div.story-area {text-align: center;}
+  #section-story h2 {text-align: center; padding: 20px 0; color: #fff;}
+  #section-story img {display: inline-block; max-width: 100%; width: 180px; height: 180px; border: 10px solid @theme-orange; .border-radius-500();}
+  #section-story p {display: block; padding: 20px 0 0 0; text-align: center; color: #fff; font-weight: 100;}
+
+#section-device {}
+  #section-device h2 {color: @theme-orange;}
+  .device-features {position: relative; margin: 20px 0 0 0; text-align: center;}
+    .device-features .device-image img {max-width: 100%;}
+    .device-features .device-point {position: relative; display: table; margin: 30px 0 0 0;}
+    .device-features .device-icon {display: block; width: 100px; height: 100px; background-size: 180px 180px; overflow: hidden; text-indent: -9000px; border: 5px solid #eee; .border-radius-500();}
+    .device-features .device-point-1 .device-icon {background-position: top left;}
+    .device-features .device-point-2 .device-icon {background-position: bottom left;}
+    .device-features .device-point-3 .device-icon {background-position: top right;}
+    .device-features .device-point-4 .device-icon {background-position: bottom right;}
+    .device-features .device-text {display: table-cell; height: 100px; width: 100%; padding: 0 20px; font-size: 1.3em; vertical-align: middle;}
+
+#section-compare {background-attachment: fixed; margin: 0 auto; width: 100%; position: relative; padding: 80px 0;}
+  #section-compare h2 {text-align: center;}
+  #section-compare h3, #section-compare p {color: #fff; font-size: 1.5em;}
+  #section-compare > div {background: url(../assets/images/black-70.png) repeat; .border-radius-15();}
+    .compare-content > div {margin-top: 20px; margin-bottom: 20px;}
+    .compare-content h3 {margin: 20px 0;}
+    .compare-content .stripe {.border-radius-10(); background: url(../assets/images/white-30.png);}
+    .compare-content .check {display: block; width: 100%; height: 60px; background: url(../assets/images/compare-check@2x.png) no-repeat center center; background-size: 60px 60px; text-indent: -9000px;}
+    .compare-content .minus {display: block; width: 100%; height: 60px; background: url(../assets/images/compare-minus@2x.png) no-repeat center center; background-size: 60px 60px; text-indent: -9000px;}
+  .compare-titles > div {text-align: center;}
+
+#section-testimonial {padding: 40px 0;}
+  #section-testimonial div.testimonial-area {text-align: center;}
+  #section-testimonial h2 {text-align: center; padding: 20px 0; color: #ef426f;}
+  #section-testimonial img {display: inline-block; max-width: 100%; width: 180px; height: 180px;}
+  #section-testimonial p {display: block; padding: 20px 0 0 0; text-align: center; color: #666; font-weight: 100;}
+
+#section-mailinglist {position: relative; background-attachment: fixed; width: 100%; padding: 100px 0;}
+  .mailing-list h2 {margin: 0 0 50px 0; font-size: 2em; text-align: center; color: #555;}
+    .mailing-list form {display: block; text-align: center;}
+    .mailing-list h4 {padding: 30px 0; font-size: 3.7em; text-align: center; color: #555;}
+    .mailing-list-text-container {position: relative; width: 90%; margin: 0 auto; margin-bottom: 20px; background: #fff;}
+    .mailing-list-file-container {position: relative; width: 90%; margin: 0 auto; margin-bottom: 20px;}
+    .mailing-list-file-container > span {display: block; width: 100%; margin-bottom: 10px; text-align: left; font-size: 0.8em; line-height: 1.2em;}
+    .mailing-list-text-container label.master-text-label, .mailing-list-file-container label.master-text-label {position: absolute; top: -2px; left: 1px; padding: 15px 20px; font-size: 2em; font-weight: 100; color: #ccc; z-index: 0;}
+    .mailing-list-text-container input.mailing-list-input, .mailing-list-file-container input.mailing-list-input {.border-box(); .transition-03(); position: relative; width: 100%; padding: 15px 20px; background: transparent; border: solid 1px #dcdcdc; font-size: 2em; color: #999; z-index: 2;}
+    .mailing-list-text-container input.mailing-list-input:focus, .mailing-list-file-container input.mailing-list-input:focus {border: solid 1px @theme-orange; color: @theme-orange; outline: 0; -webkit-box-shadow: 0 0 5px 1px @theme-orange; -moz-box-shadow: 0 0 5px 1px @theme-orange; box-shadow: 0 0 5px 1px @theme-orange;}
+    .mailing-list-text-container select {width: 100%; border: solid 1px #dcdcdc; padding: 15px 20px; font-size: 2em; color: #999; .border-radius-0;}
+    .mailing-list-text-container label.error {.border-radius-5(); position: absolute; display: block; top: 20px; right: 10px; padding: 5px; background: @error-red; color: #fff; z-index: 100;}
+    .mailing-list-file-container label.error {.border-radius-3(); position: absolute; display: block; bottom: -1px; right: 10px; padding: 3px; background: @error-red; color: #fff; z-index: 100;}
+    .mailing-list-submit-container {position: relative; width: 90%; margin: 0 auto;}
+    .mailing-list-submit-container input.mailing-list-submit {.border-box(); width: 100%; padding: 15px 20px; background: #ccc; border: 0; font-size: 2em; color: #fff;}
+    .mailing-list-submit-container input.mailing-list-submit:hover {background: @theme-orange-light;}
+    .mailing-list-submission-bg {display: none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #fff; opacity: 0; z-index: 999;}
+
+#footer {position: absolute; bottom: 0; width: 100%; padding: 50px 0;
+  background-color: @theme-orange;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(@theme-orange), to(@theme-orange-light));
+  background-image: -webkit-linear-gradient(303deg, @theme-orange, @theme-orange-light);
+  background-image: -moz-linear-gradient(to top right, @theme-orange, @theme-orange-light);
+  background-image: -o-linear-gradient(to top right, @theme-orange, @theme-orange-light);
+  background-image: linear-gradient(to top right, @theme-orange, @theme-orange-light);
+}
+  #footer .social-media {display: block; text-align: center;}
+    #footer .social-media a {display: inline-block; margin: 0 5px; width: 75px; height: 75px; background-image: url(../assets/images/social-media-sprite@2x.png); background-size: 75px 225px; text-indent: -9000px; opacity: 0.5;}
+    #footer .social-media a:hover {opacity: 1;}
+    #footer .social-media a.sm-qq {background-position: 0 0;}
+    #footer .social-media a.sm-wechat {background-position: 0 -75px;}
+    #footer .social-media a.sm-weibo {background-position: 0 -150px;}
+  #footer .copyright {display: block; padding: 30px 0 0 0; color: #fff; font-size: 1.2em; font-weight: 100; text-align: center;}
+  #footer a, #footer a:visited {color: #fff;}
+  #footer a:hover  {color: #ddd; text-decoration: none;}
+
+.text-column {}
+  .text-column h3 {color: @theme-orange;}
+
+ol.faq {padding: 0;}
+  ol.faq li {list-style: none;}
+  ol.faq li p.faq-question {margin: 0; padding: 30px 0 0 0; color: #999;}
+  ol.faq li p.faq-answer {margin: 0; padding: 5px 0 0 0;}
+  ol.faq li:last-child p.faq-answer {padding: 5px 0 30px 0;}
+
+ul.graphic {list-style-type: none; padding-left: 0px; margin-left: 0px;}
+ul.graphic {list-style-type: none; margin: 0px; padding: 0px;}
+ul.graphic li {margin-bottom: 2px;}
+ul.graphic li a, ul.graphic li a.sm2_link {display: inline-block; padding-left: 22px; min-height: 16px; height: 50px; vertical-align: middle; background-color: #336699; .border-radius-500(); line-height: 45px; font-size: 20px; font-weight: 100; padding: 3px; min-width: 15em; text-decoration: none; font-weight: normal; color: #f6f9ff;}
+ul.graphic li a.sm2_link {-webkit-transition-property: hover; -webkit-transition: background-color 0.15s linear; -moz-transition: background-color 0.15s linear 0s; -o-transition-property: background-color; -o-transition-duration: 0.15s;}
+ul.graphic li a, ul.graphic li a.sm2_paused:hover, ul.graphic li a.sm2_link:hover {background-image: url(../assets/images/icon-play.png); background-position: 12px 50%; background-repeat: no-repeat;}
+ul.graphic li a.sm2_link:hover {background-color: @theme-orange; color: #fff;}
+ul.graphic li a.sm2_paused {background-color: #999;}
+ul.graphic li a.sm2_paused:hover {background: @theme-orange url(../assets/images/icon-play.png) no-repeat 12px 50%;}
+ul.graphic li a.sm2_playing, ul.graphic li a.sm2_playing:hover {background: @theme-orange url(../assets/images/icon-pause.png) no-repeat 12px 50%; text-decoration: none;}
+
+/* Datepicker */
+/* Component containers
+----------------------------------*/
+.ui-widget {}
+.ui-widget .ui-widget {}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {}
+.ui-widget-content {border: 1px solid @theme-orange; background: #fff; color: #333;}
+.ui-widget-content a {color: #666;}
+.ui-widget-header {background: @theme-orange; color: #fff; font-weight: bold;}
+.ui-widget-header a {color: #fff;}
+
+/* Overlays */
+.ui-widget-overlay {position: fixed; top: 0; left: 0; width: 100%; height: 100%;}
+.ui-datepicker {width: 400px; padding: .2em .2em 0; display: none;}
+.ui-datepicker .ui-datepicker-header {position: relative; padding: .2em 0;}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {position: absolute; top: 2px; width: 80px; height: 1.8em; cursor: pointer;}
+.ui-datepicker .ui-datepicker-prev {left: 2px; text-align: left;}
+.ui-datepicker .ui-datepicker-next {right: 2px; text-align: right;}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {display: block; position: absolute; left: 35%; margin-left: -8px; top: 40%; margin-top: -8px;}
+.ui-datepicker-unselectable span {background: #eee; color: #ccc; font-weight: 100;}
+.ui-datepicker .ui-datepicker-title {margin: 0 2.3em; line-height: 1.8em; text-align: center;}
+.ui-datepicker .ui-datepicker-title select {font-size: 1em; margin: 1px 0;}
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {width: 45%;}
+.ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin: 0 0 .4em;}
+.ui-datepicker th {padding: .7em .3em; text-align: center; border: 0;}
+.ui-datepicker td {border: 0; padding: 1px;}
+.ui-datepicker td span, .ui-datepicker td a {display: block; text-align: right; text-decoration: none;}
+.ui-datepicker .ui-datepicker-buttonpane {background-image: none; margin: .7em 0 0 0; padding: 0 .2em; border-left: 0; border-right: 0; border-bottom: 0;}
+.ui-datepicker .ui-datepicker-buttonpane button {float: right; margin: .5em .2em .4em;cursor: pointer; padding: .2em .6em .3em .6em; width: auto;overflow: visible;}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {float: left;}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {border: 1px solid #eee; font-weight: 100; line-height: 2em; padding: .2em .6em .2em .2em}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {color: #1c94c4; text-decoration: none;}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {border: 1px solid @theme-orange; background: @theme-orange; color: #fff;}
+.ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited, .ui-state-focus a, .ui-state-focus a:hover, .ui-state-focus a:link, .ui-state-focus a:visited {color: @theme-orange; text-decoration: none;}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {border: 1px solid @theme-orange; background: @theme-orange; color: #fff;}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {color: #eb8f00; text-decoration: none;}
+
+/* Country Select Box */
+.selectBox-dropdown {position: relative; width: 100% !important; border: solid 1px #dcdcdc; padding: 15px 20px; text-decoration: none; text-align: left; font-size: 2em; color: #999; outline: 0; vertical-align: middle; background: #fff; display: inline-block; cursor: pointer;}
+.selectBox-dropdown:hover {color: #999; text-decoration: none;}
+.selectBox-dropdown:focus, .selectBox-dropdown:focus .selectBox-arrow {border-color: @theme-orange; text-decoration: none; text-decoration: none; color: @theme-orange; outline: 0;}
+
+.selectBox-dropdown.selectBox-menuShowing-bottom {}
+.selectBox-dropdown.selectBox-menuShowing-top {}
+
+.selectBox-dropdown .selectBox-label {white-space: nowrap; text-decoration: none; overflow: hidden;}
+.selectBox-dropdown .selectBox-arrow {position: absolute; top: 0; right: 0; width: 23px; border: 0; height: 100%;}
+
+/* Dropdown menu */
+.selectBox-dropdown-menu {position: absolute; padding: 20px; z-index: 99999; max-height: 200px; min-height: 1em; border: solid 1px @theme-orange; background: #FFF; overflow: auto; -webkit-overflow-scrolling: touch;}
+
+/* Inline control */
+.selectBox-inline {min-width: 150px; outline: none; border: solid 1px #dcdcdc; background: #fff; display: inline-block; overflow: auto;}
+
+.selectBox-inline:focus {border-color: #dcdcdc;}
+
+  /* Options */
+  .selectBox-options, .selectBox-options li, .selectBox-options li a {list-style: none; padding: 20px; display: block; padding: 0; cursor: default; .border-box()}
+  .selectBox-options li:first-child {display: none; width: 100%;}
+  .selectBox-options li {float: left; width: 33.3%;}
+
+  .selectBox-options.selectBox-options-top{border-bottom: none; margin-top:1px;}
+  .selectBox-options.selectBox-options-bottom{border-top: none;}
+  .selectBox-options li a {font-size: 1.5em; padding: 10px 20px; white-space: nowrap; color: #999; cursor: pointer; overflow: hidden;}
+
+  .selectBox-options li.selectBox-hover a {background-color: #fff; color: @theme-orange; text-decoration: none;}
+  .selectBox-options li.selectBox-disabled a {color: #888; background-color: transparent;}
+  .selectBox-options li.selectBox-selected a {background-color: #fff;}
+
+  .selectBox-options .selectBox-optgroup {color: #666; background: #eee; font-weight: bold; line-height: 1.5; padding: 0 .3em; white-space: nowrap;}
+
+/* Disabled state */
+.selectBox.selectBox-disabled {color: #888 !important;}
+.selectBox-dropdown.selectBox-disabled .selectBox-arrow {opacity: .5; filter: alpha(opacity=50); border-color: #666;}
+.selectBox-inline.selectBox-disabled {color: #888 !important;}
+.selectBox-inline.selectBox-disabled .selectBox-options a {background-color: transparent !important;}
+
+/* Checkbox */
+#checkboxsquare {width: 30px;}
+.checkboxsquare {display: block; width: 20px; position: relative; margin: 20px auto; text-align: left;}
+.checkboxsquare label.checkboxlabel {width: 20px; height: 20px; border: 1px solid #ccc; cursor: pointer; position: absolute; top: 0; left: 0; background: #fcfcfc; border-radius: 4px;}
+.checkboxsquare label.checkboxlabel:after {content: ''; width: 12px; height: 7px; position: absolute; top: 4px; left: 3px; border: 3px solid @theme-orange; border-top: none; border-right: none; background: transparent; opacity: 0; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);}
+.checkboxsquare label.checkboxlabel:hover::after {opacity: 0.5;}
+.checkboxsquare input[type=checkbox] {visibility: hidden;}
+.checkboxsquare input[type=checkbox]:checked + label.checkboxlabel:after {opacity: 1;}
+.checkboxsquare input[type=checkbox]:checked + label.checkboxlabel {border: 1px solid @theme-orange;}
+.checkboxsquare label.error {bottom: -7px;}
+
+/* Featherlight */
+@media all {
+  .featherlight {display: none; position:fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 2147483647; text-align: center; white-space: nowrap; cursor: pointer; background: #333; background: rgba(0, 0, 0, 0);}
+  .featherlight:last-of-type {background: rgba(0, 0, 0, 0.8);}
+  .featherlight:before {content: ''; display: inline-block; height: 100%; vertical-align: middle; margin-right: -0.25em;}
+  .featherlight .featherlight-content {position: relative; text-align: left; vertical-align: middle; display: inline-block; overflow: auto; padding: 25px 25px 0; border-bottom: 25px solid transparent; min-width:  30%; margin-left: 5%; margin-right: 5%; max-height: 95%; background: #fff; cursor: auto; white-space: normal;}
+  .featherlight .featherlight-inner {display: block;}
+  .featherlight .featherlight-close-icon {position: absolute; z-index: 9999; top: 0; right: 0; line-height: 25px; width: 25px; cursor: pointer; text-align: center; font-family: Arial, sans-serif; background: #fff; background: rgba(255, 255, 255, 0.3); color: #000;}
+  .featherlight .featherlight-image {width: 100%;}
+  .featherlight-iframe .featherlight-content {border-bottom: 0; padding: 0;}
+  .featherlight iframe {border: none;}
+}
+@media only screen and (max-width: 1024px) { .featherlight .featherlight-content {margin-left: 10px; margin-right: 10px; max-height: 98%; padding: 10px 10px 0; border-bottom: 10px solid transparent;}}
