@@ -108,12 +108,13 @@
     </nav>
 
     <section class="jumbotron" id="intro" data-type="background" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo curPageURL(); ?>/assets/images/bg-hero.jpg" data-speed="1">
+      <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+        <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm">
+        <source src="//demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+      </video>
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 hero-image col-sm-push-6">
-            <img src="assets/images/hero-package.png" alt="Xinkaishi device" />
-          </div>
-          <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+          <div class="col-xs-12">
             <h1>Your trusted companion for pregnancy and beyond</h1>
             <p>A smarter, healthier way to connect with your baby </p>
             <p><a class="download-ios" href="https://itunes.apple.com/us/app/xinkaishi/id1056313641">Download from the App Store</a><a class="download-android" href="#">Download Android version</a></p>

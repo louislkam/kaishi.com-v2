@@ -6755,16 +6755,18 @@ button.close {
   position: relative;
   display: block;
   margin: 0 auto;
-  padding: 150px 0 150px 0;
+  padding: 250px 0;
   background: transparent;
   overflow: hidden;
 }
 .jumbotron h1 {
   margin: 0.4em 0;
   color: #ef426f;
+  text-align: center;
 }
 .jumbotron p {
   color: #666;
+  text-align: center;
 }
 .jumbotron .hero-image img {
   max-width: 100%;
